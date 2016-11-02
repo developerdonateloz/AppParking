@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@color/verdedecente">
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.Actionbar"
+    app:popuptheme="@style/ThemeOverlay.AppCompat.Dark.Actionbar"
+    />
+  <android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <!--CONTENIDO PRINCIPAL-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Placa"
+        android:id="@+id/txtPlaca"
+        android:inputType="textCapCharacters" />
+    <EditText
+        android:inputType="textCapCharacters"
+        android:hint="Dueño"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDuenio" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:hint="Observaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtObservaciones" />
+    <EditText
+        android:inputType="time"
+        android:hint="Hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHora" />
+    <Button
+        android:text="REGISTRO INGRESO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnIngreso" />
+    <Button
+        android:text="Saldo Pendiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalcularSaldo" />
+    <Button
+        android:text="Registro Salida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSalida" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblMensaje" />
+    <!--ITEMS NAVEGACION-->
+    <ListView
+      android:id="@+id/left_drawer"
+      android:layout_width="240dpt"
+      android:layout_height="wrap_content"
+      >
+    </ListView>
+  </android.support.v4.widget.DrawerLayout>
+    
+</LinearLayout>
