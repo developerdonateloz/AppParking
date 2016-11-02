@@ -17,7 +17,7 @@ namespace AppParking
             // Set our view from the "main" layout resource
             SetContentView (Resource.Layout.Main);
 
-            Button btnIngreso = FindViewById<Button>(Resource.Id.btnIngreso);
+            Button btnIngreso = FindViewById<Button>(Resource.Id.btnIngreso); // Test en github
             Button btnSalida = FindViewById<Button>(Resource.Id.btnSalida);
             Button btnCalcularSaldo = FindViewById<Button>(Resource.Id.btnCalcularSaldo);
 
@@ -39,7 +39,7 @@ namespace AppParking
             {
                 if(item.Placa==txtPlaca.Text.Trim() && item.HoraMinutoSalida==string.Empty)
                 {
-                    lblMensaje.Text = "S/ 15.00";
+                    lblMensaje.Text = "S/ 25.00"; 
                 }
             }
         }
