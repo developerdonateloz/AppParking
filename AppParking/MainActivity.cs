@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace AppParking
 {
-    [Activity(Label = "App Cochera . Gordiiiiita", MainLauncher = true, Icon = "@drawable/icon", Theme ="@style/MyTheme")]
+    [Activity(Label = "App Parking", MainLauncher = true, Icon = "@drawable/icon", Theme ="@style/MyTheme")]
     public class MainActivity : Activity
     {
         private List<Registro> ListaRegistros;
@@ -70,7 +70,8 @@ namespace AppParking
 
             ListaRegistros.Add(oregistro);
 
-            lblMensaje.Text = "Gordita, ingreso ya está registrado, jojolete";
+            Toast.MakeText(this, "Ingreso registrado, correctamente.", ToastLength.Short).Show();
+            //lblMensaje.Text = "Ingreso registrado, correctamente";
 
             txtPlaca.Text = string.Empty;
             txtDuenio.Text = string.Empty;

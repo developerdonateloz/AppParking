@@ -13,8 +13,7 @@
     android:layout_height="wrap_content"
     android:minHeight="?attr/actionBarSize"
     android:background="?attr/colorPrimary"
-    app:theme="@style/ThemeOverlay.AppCompat.Dark.Actionbar"
-    app:popuptheme="@style/ThemeOverlay.AppCompat.Dark.Actionbar"
+    
     />
   <android.support.v4.widget.DrawerLayout
     android:id="@+id/drawer_layout"
@@ -68,7 +67,6 @@
     <!--ITEMS NAVEGACION-->
     <ListView
       android:id="@+id/left_drawer"
-      android:layout_width="240dpt"
       android:layout_height="wrap_content"
       >
     </ListView>
